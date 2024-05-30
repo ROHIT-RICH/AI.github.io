@@ -1,0 +1,1261 @@
+@media screen and (max-width: 400px) {
+    body {
+        overscroll-behavior: none;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .nav {
+        display: none
+    }
+
+    .responsive-nav {
+        z-index: 9;
+        position: fixed;
+        display: block;
+        top: 30px;
+        background-color: transparent;
+    }
+
+    .nav-img {
+        height: 15px;
+        width: 90px;
+        margin-left: 50px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 350px;
+        z-index: 999;
+        background-color: black;
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .sidebar li {
+        width: 100%;
+        list-style: none;
+        text-align: center;
+    }
+
+    .sidebar a {
+        width: 100%;
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+    }
+
+    .sidebar a:hover {
+        color: #CFA935;
+    }
+
+
+    .navbar-brand {
+        filter: brightness(5) grayscale(1);
+        opacity: .7;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border-color: transparent;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #171A24;
+        min-width: 240px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white !important;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        z-index: 9;
+    }
+
+    .dropdown:hover .dropdown-content a:hover {
+        color: white !important;
+        text-decoration: underline;
+        transition: 0.7s ease;
+        z-index: 9;
+    }
+
+    .menu-button {
+        position: fixed;
+        margin: 25px 0 0 1200px;
+        display: block;
+        z-index: 2;
+    }
+
+    .menu-button svg {
+        height: 70px;
+        width: 70px;
+    }
+
+    .menu-close {
+        margin: 25px 0 0 0px;
+    }
+
+    .menu-close svg {
+        height: 70px;
+        width: 70px;
+    }
+
+    .slider {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    .slide {
+        position: absolute;
+        top: -16px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .slide video {
+        position: absolute;
+        top: -79px;
+        left: 0;
+        object-fit: cover;
+        height: 87vh;
+        width: 1400px;
+        filter: brightness(1);
+    }
+
+    .slide img {
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+        height: 93vh;
+        width: 1400px;
+    }
+
+    .slider-heading {
+        position: absolute;
+        z-index: 2;
+        top: 210px;
+        left: 150px;
+        width: 590px;
+        height: 45%;
+    }
+
+    .slider-heading h1 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .box {
+        position: absolute !important;
+        border: 2px solid#CFA935;
+        background-color: #CFA935;
+        width: 220px;
+        padding: 0 0 0 5px;
+        top: 85px;
+        left: 133px;
+        height: 76px;
+    }
+
+    .slider-heading h4 {
+        position: absolute;
+        width: 693px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        top: 160px;
+    }
+
+    .scrollmenu {
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 590px;
+        box-sizing: border-box;
+        width: 1400px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .first {
+        position: absolute;
+        margin-top: 700px;
+        width: 1400px;
+    }
+
+    .first-heading {
+        margin-left: 30px;
+    }
+
+    .second-heading {
+        text-align: center;
+        margin-left: 30px;
+        color: white;
+    }
+
+    .third-heading {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .nav {
+        display: none
+    }
+
+    .responsive-nav {
+        z-index: 9;
+        position: fixed;
+        display: block;
+        top: 30px;
+        background-color: transparent;
+    }
+
+    .nav-img {
+        height: 15px;
+        width: 90px;
+        margin-left: 50px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 650px;
+        z-index: 999;
+        background-color: black;
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .sidebar li {
+        width: 100%;
+        list-style: none;
+        text-align: center;
+    }
+
+    .sidebar a {
+        width: 100%;
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+    }
+
+    .sidebar a:hover {
+        color: #CFA935;
+    }
+
+
+    .navbar-brand {
+        filter: brightness(5) grayscale(1);
+        opacity: .7;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border-color: transparent;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #171A24;
+        min-width: 240px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white !important;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        z-index: 9;
+    }
+
+    .dropdown:hover .dropdown-content a:hover {
+        color: white !important;
+        text-decoration: underline;
+        transition: 0.7s ease;
+        z-index: 9;
+    }
+
+    .menu-button {
+        position: fixed;
+        margin: 25px 0 0 1200px;
+        display: block;
+        z-index: 2;
+    }
+
+    .menu-button svg {
+        height: 70px;
+        width: 70px;
+    }
+
+    .menu-close {
+        margin: 25px 0 0 0px;
+    }
+
+    .menu-close svg {
+        height: 70px;
+        width: 70px;
+    }
+
+    .slider {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    .slide {
+        position: absolute;
+        top: -16px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .slide video {
+        position: absolute;
+        top: -79px;
+        left: 0;
+        object-fit: cover;
+        height: 87vh;
+        width: 1400px;
+        filter: brightness(1);
+    }
+
+    .slide img {
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+        height: 93vh;
+        width: 1400px;
+    }
+
+    .slider-heading {
+        position: absolute;
+        z-index: 2;
+        top: 210px;
+        left: 150px;
+        width: 590px;
+        height: 45%;
+    }
+
+    .slider-heading h1 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .box {
+        position: absolute !important;
+        border: 2px solid#CFA935;
+        background-color: #CFA935;
+        width: 220px;
+        padding: 0 0 0 5px;
+        top: 85px;
+        left: 133px;
+        height: 76px;
+    }
+
+    .slider-heading h4 {
+        position: absolute;
+        width: 693px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        top: 160px;
+    }
+
+    .scrollmenu {
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 590px;
+        box-sizing: border-box;
+        width: 1400px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .first {
+        position: absolute;
+        margin-top: 700px;
+        width: 1400px;
+    }
+
+    .first-heading {
+        margin-left: 30px;
+    }
+
+    .second-heading {
+        text-align: center;
+        margin-left: 30px;
+        color: white;
+    }
+
+    .third-heading {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .slider {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    .slide {
+        position: absolute;
+        top: -16px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .slide video {
+        position: absolute;
+        top: -79px;
+        left: 0;
+        object-fit: cover;
+        height: 87vh;
+        width: 1400px;
+        filter: brightness(1);
+    }
+
+    .slide img {
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+        height: 93vh;
+        width: 1400px;
+    }
+
+    .slider-heading {
+        position: absolute;
+        z-index: 2;
+        top: 210px;
+        left: 150px;
+        width: 590px;
+        height: 45%;
+    }
+
+    .slider-heading h1 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .box {
+        position: absolute !important;
+        border: 2px solid#CFA935;
+        background-color: #CFA935;
+        width: 220px;
+        padding: 0 0 0 5px;
+        top: 85px;
+        left: 133px;
+        height: 76px;
+    }
+
+    .slider-heading h4 {
+        position: absolute;
+        width: 693px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        top: 160px;
+    }
+
+    .scrollmenu {
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 590px;
+        box-sizing: border-box;
+        width: 1400px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .first {
+        position: absolute;
+        margin-top: 700px;
+        width: 1400px;
+    }
+
+    .first-heading {
+        margin-left: 30px;
+    }
+
+    .second-heading {
+        text-align: center;
+        margin-left: 30px;
+        color: white;
+    }
+
+    .third-heading {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .slider {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    .slide {
+        position: absolute;
+        top: -16px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .slide video {
+        position: absolute;
+        top: -79px;
+        left: 0;
+        object-fit: cover;
+        height: 87vh;
+        width: 1400px;
+        filter: brightness(1);
+    }
+
+    .slide img {
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+        height: 93vh;
+        width: 1400px;
+    }
+
+    .slider-heading {
+        position: absolute;
+        z-index: 2;
+        top: 210px;
+        left: 150px;
+        width: 590px;
+        height: 45%;
+    }
+
+    .slider-heading h1 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .box {
+        position: absolute !important;
+        border: 2px solid#CFA935;
+        background-color: #CFA935;
+        width: 220px;
+        padding: 0 0 0 5px;
+        top: 85px;
+        left: 133px;
+        height: 76px;
+    }
+
+    .slider-heading h4 {
+        position: absolute;
+        width: 693px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        top: 160px;
+    }
+
+    .scrollmenu {
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 590px;
+        box-sizing: border-box;
+        width: 1400px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .first {
+        position: absolute;
+        margin-top: 700px;
+        width: 1400px;
+    }
+
+    .first-heading {
+        margin-left: 30px;
+    }
+
+    .second-heading {
+        text-align: center;
+        margin-left: 30px;
+        color: white;
+    }
+
+    .third-heading {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .slider {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    .slide {
+        position: absolute;
+        top: -16px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .slide video {
+        position: absolute;
+        top: -79px;
+        left: 0;
+        object-fit: cover;
+        height: 87vh;
+        width: 1400px;
+        filter: brightness(1);
+    }
+
+    .slide img {
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+        height: 93vh;
+        width: 1400px;
+    }
+
+    .slider-heading {
+        position: absolute;
+        z-index: 2;
+        top: 210px;
+        left: 150px;
+        width: 590px;
+        height: 45%;
+    }
+
+    .slider-heading h1 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .box {
+        position: absolute !important;
+        border: 2px solid#CFA935;
+        background-color: #CFA935;
+        width: 220px;
+        padding: 0 0 0 5px;
+        top: 85px;
+        left: 133px;
+        height: 76px;
+    }
+
+    .slider-heading h4 {
+        position: absolute;
+        width: 693px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        top: 160px;
+    }
+
+    .scrollmenu {
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 590px;
+        box-sizing: border-box;
+        width: 1400px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .first {
+        position: absolute;
+        margin-top: 700px;
+        width: 1400px;
+    }
+
+    .first-heading {
+        margin-left: 30px;
+    }
+
+    .second-heading {
+        text-align: center;
+        margin-left: 30px;
+        color: white;
+    }
+
+    .third-heading {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .slider {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    .slide {
+        position: absolute;
+        top: -16px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .slide video {
+        position: absolute;
+        top: -79px;
+        left: 0;
+        object-fit: cover;
+        height: 87vh;
+        width: 1400px;
+        filter: brightness(1);
+    }
+
+    .slide img {
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+        height: 93vh;
+        width: 1400px;
+    }
+
+    .slider-heading {
+        position: absolute;
+        z-index: 2;
+        top: 210px;
+        left: 150px;
+        width: 590px;
+        height: 45%;
+    }
+
+    .slider-heading h1 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .box {
+        position: absolute !important;
+        border: 2px solid#CFA935;
+        background-color: #CFA935;
+        width: 220px;
+        padding: 0 0 0 5px;
+        top: 85px;
+        left: 133px;
+        height: 76px;
+    }
+
+    .slider-heading h4 {
+        position: absolute;
+        width: 693px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        top: 160px;
+    }
+
+    .scrollmenu {
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 590px;
+        box-sizing: border-box;
+        width: 1400px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .first {
+        position: absolute;
+        margin-top: 700px;
+        width: 1400px;
+    }
+
+    .first-heading {
+        margin-left: 30px;
+    }
+
+    .second-heading {
+        text-align: center;
+        margin-left: 30px;
+        color: white;
+    }
+
+    .third-heading {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .slider {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    .slide {
+        position: absolute;
+        top: -16px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .slide video {
+        position: absolute;
+        top: -79px;
+        left: 0;
+        object-fit: cover;
+        height: 87vh;
+        width: 1400px;
+        filter: brightness(1);
+    }
+
+    .slide img {
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+        height: 93vh;
+        width: 1400px;
+    }
+
+    .slider-heading {
+        position: absolute;
+        z-index: 2;
+        top: 210px;
+        left: 150px;
+        width: 590px;
+        height: 45%;
+    }
+
+    .slider-heading h1 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .box {
+        position: absolute !important;
+        border: 2px solid#CFA935;
+        background-color: #CFA935;
+        width: 220px;
+        padding: 0 0 0 5px;
+        top: 85px;
+        left: 133px;
+        height: 76px;
+    }
+
+    .slider-heading h4 {
+        position: absolute;
+        width: 693px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        top: 160px;
+    }
+
+    .scrollmenu {
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 590px;
+        box-sizing: border-box;
+        width: 1400px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .first {
+        position: absolute;
+        margin-top: 700px;
+        width: 1400px;
+    }
+
+    .first-heading {
+        margin-left: 30px;
+    }
+
+    .second-heading {
+        text-align: center;
+        margin-left: 30px;
+        color: white;
+    }
+
+    .third-heading {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .slider {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    .slide {
+        position: absolute;
+        top: -16px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .slide video {
+        position: absolute;
+        top: -79px;
+        left: 0;
+        object-fit: cover;
+        height: 87vh;
+        width: 1400px;
+        filter: brightness(1);
+    }
+
+    .slide img {
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+        height: 93vh;
+        width: 1400px;
+    }
+
+    .slider-heading {
+        position: absolute;
+        z-index: 2;
+        top: 210px;
+        left: 150px;
+        width: 590px;
+        height: 45%;
+    }
+
+    .slider-heading h1 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .box {
+        position: absolute !important;
+        border: 2px solid#CFA935;
+        background-color: #CFA935;
+        width: 220px;
+        padding: 0 0 0 5px;
+        top: 85px;
+        left: 133px;
+        height: 76px;
+    }
+
+    .slider-heading h4 {
+        position: absolute;
+        width: 693px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        top: 160px;
+    }
+
+    .scrollmenu {
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 590px;
+        box-sizing: border-box;
+        width: 1400px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .first {
+        position: absolute;
+        margin-top: 700px;
+        width: 1400px;
+    }
+
+    .first-heading {
+        margin-left: 30px;
+    }
+
+    .second-heading {
+        text-align: center;
+        margin-left: 30px;
+        color: white;
+    }
+
+    .third-heading {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .slider {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    .slide {
+        position: absolute;
+        top: -16px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .slide video {
+        position: absolute;
+        top: -79px;
+        left: 0;
+        object-fit: cover;
+        height: 100vh;
+        width: 1400px;
+        filter: brightness(1);
+    }
+
+    .slide img {
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+        height: 93vh;
+        width: 1400px;
+    }
+
+    .slider-heading {
+        position: absolute;
+        z-index: 2;
+        top: 210px;
+        left: 150px;
+        width: 590px;
+        height: 45%;
+    }
+
+    .slider-heading h1 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .box {
+        position: absolute !important;
+        border: 2px solid#CFA935;
+        background-color: #CFA935;
+        width: 220px;
+        padding: 0 0 0 5px;
+        top: 85px;
+        left: 133px;
+        height: 76px;
+    }
+
+    .slider-heading h4 {
+        position: absolute;
+        width: 693px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        top: 160px;
+    }
+
+    .scrollmenu {
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 590px;
+        box-sizing: border-box;
+        width: 1400px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .first {
+        position: absolute;
+        margin-top: 700px;
+        width: 1400px;
+    }
+
+    .first-heading {
+        margin-left: 30px;
+    }
+
+    .second-heading {
+        text-align: center;
+        margin-left: 30px;
+        color: white;
+    }
+
+    .third-heading {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .slider {
+        position: relative;
+        width: 100%;
+        top: 0;
+        height: 100%;
+    }
+
+    .slide {
+        position: absolute;
+        top: -16px;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .slide video {
+        position: absolute;
+        top: -79px;
+        left: 0;
+        object-fit: cover;
+        height: 100vh;
+        width: 1400px;
+        filter: brightness(1);
+    }
+
+    .slide img {
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+        height: 88vh;
+        width: 1400px;
+    }
+
+    .slider-heading {
+        position: absolute;
+        z-index: 2;
+        top: 210px;
+        left: 150px;
+        width: 590px;
+        height: 45%;
+    }
+
+    .slider-heading h1 {
+        position: absolute;
+        color: white;
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .box {
+        position: absolute !important;
+        border: 2px solid#CFA935;
+        background-color: #CFA935;
+        width: 220px;
+        padding: 0 0 0 5px;
+        top: 85px;
+        left: 133px;
+        height: 76px;
+    }
+
+    .slider-heading h4 {
+        position: absolute;
+        width: 693px;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        top: 160px;
+    }
+
+    .scrollmenu {
+        position: absolute;
+        white-space: nowrap;
+        margin-top: 570px;
+        box-sizing: border-box;
+        width: 1400px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .first {
+        position: absolute;
+        margin-top: 700px;
+        width: 1400px;
+    }
+
+    .first-heading {
+        margin-left: 30px;
+    }
+
+    .second-heading {
+        text-align: center;
+        margin-left: 30px;
+        color: white;
+    }
+
+    .third-heading {
+        margin-left: 30px;
+    }
+}
